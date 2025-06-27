@@ -1,7 +1,7 @@
 # Dailyexpensetracker
 # 💸 Daily Expense Tracker – Java Full Stack Web Application
 
-This is a full-stack expense tracking web app developed using Java technologies like **JSP, Servlets, JDBC**, and **MySQL**, with a responsive frontend built using **HTML, CSS**, and **Bootstrap**.
+This is a full-stack expense tracking web app developed using Java technologies like **JSP, Servlets, JDBC**, and **MySQL**, with a responsive frontend built using **HTML, CSS**.
 
 ---
 

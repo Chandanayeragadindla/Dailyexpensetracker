@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Daily Expense Tracker</display-name>
+
+    <!-- Welcome file list -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Add Expense Servlet -->
+    <servlet>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <servlet-class>org.example.dailyexpensetrackerproject.AddExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <url-pattern>/addExpense</url-pattern>
+    </servlet-mapping>
+
+
+
+    <!-- Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>org.example.dailyexpensetrackerproject.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.example.dailyexpensetrackerproject.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Expense Servlet -->
+    <servlet>
+        <servlet-name>ViewExpenseServlet</servlet-name>
+        <servlet-class>org.example.dailyexpensetrackerproject.ViewExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewExpenseServlet</servlet-name>
+        <url-pattern>/viewExpense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FilterExpenseServlet</servlet-name>
+        <servlet-class>org.example.dailyexpensetrackerproject.FilterExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FilterExpenseServlet</servlet-name>
+        <url-pattern>/filterExpense</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
